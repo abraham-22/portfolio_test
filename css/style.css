@@ -1,87 +1,81 @@
-/* Reset and base styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
-    color: #f0f0f0;
 }
 
-/* Header */
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-header h1 {
-    margin: 0;
-    padding: 0 3rem; /* Match the main section horizontal padding */
+/* Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
 }
 
-/* Main content area */
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem 3rem;
-    background: #ffffff; /* Changed to white */
-    color: #000000;       /* Font color set to black */
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #2f3e46;
+    color: white;
+    padding: 20px;
+    flex-shrink: 0;
 }
 
-/* Headings */
-h2 {
-    color: #000000; /* Adjusted for contrast with white background */
-    margin-bottom: 1rem;
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
-/* List styles */
-ul {
+.sidebar ul {
     list-style: none;
     padding: 0;
 }
 
-ul li {
-    background: rgba(255, 255, 255, 0.85);
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
-    color: #333;
+.sidebar li {
+    margin-bottom: 10px;
+    line-height: 1.4;
 }
 
-ul li h3 {
-    margin: 0 0 0.5rem;
+.sidebar a {
+    color: #ade8f4;
+    text-decoration: none;
 }
 
-ul li p {
-    margin: 0;
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    margin-top: 40px;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-    main {
-        padding: 2rem 1rem;
-    }
-
-    ul li {
-        padding: 1rem;
-    }
-
-    header h1 {
-        padding: 0 1rem; /* Adjust with responsive main padding */
-    }
+    font-size: 0.9rem;
+    color: #666;
 }
