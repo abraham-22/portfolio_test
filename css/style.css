@@ -3,7 +3,9 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
 }
 
 header {
