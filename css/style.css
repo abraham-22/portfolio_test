@@ -17,7 +17,8 @@ header {
 }
 
 header h1 {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0 3rem; /* Match the main section horizontal padding */
 }
 
 /* Main content area */
@@ -25,11 +26,13 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem 3rem;
+    background: #ffffff; /* Changed to white */
+    color: #000000;       /* Font color set to black */
 }
 
 /* Headings */
 h2 {
-    color: #ffffff;
+    color: #000000; /* Adjusted for contrast with white background */
     margin-bottom: 1rem;
 }
 
@@ -76,5 +79,9 @@ footer {
 
     ul li {
         padding: 1rem;
+    }
+
+    header h1 {
+        padding: 0 1rem; /* Adjust with responsive main padding */
     }
 }
