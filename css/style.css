@@ -1,13 +1,14 @@
+/* Reset and base styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #f0f0f0;
 }
 
+/* Header */
 header {
     background: #333;
     color: #fff;
@@ -17,27 +18,38 @@ header {
 
 header h1 {
     margin: 0;
+    padding: 0 3rem; /* Match the main section horizontal padding */
 }
 
+/* Main content area */
 main {
-    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    background: #ffffff; /* Changed to white */
+    color: #000000;       /* Font color set to black */
 }
 
+/* Headings */
 h2 {
-    color: #333;
+    color: #000000; /* Adjusted for contrast with white background */
+    margin-bottom: 1rem;
 }
 
+/* List styles */
 ul {
     list-style: none;
     padding: 0;
 }
 
 ul li {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.85);
     margin-bottom: 1rem;
     padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    color: #333;
 }
 
 ul li h3 {
@@ -48,6 +60,7 @@ ul li p {
     margin: 0;
 }
 
+/* Footer */
 footer {
     background: #333;
     color: #fff;
@@ -56,4 +69,19 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    main {
+        padding: 2rem 1rem;
+    }
+
+    ul li {
+        padding: 1rem;
+    }
+
+    header h1 {
+        padding: 0 1rem; /* Adjust with responsive main padding */
+    }
 }
