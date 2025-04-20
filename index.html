@@ -1,192 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Basic styling - feel free to expand in your style.css */
-        body {
-            font-family: sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
+<title>Data Science Portfolio</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 20px; /* Adjust overall page margin as needed */
+  display: flex; /* Enable flexbox for layout */
+}
 
-        header {
-            text-align: center;
-            padding: 2em 0;
-            background-color: #f8f9fa;
-            border-bottom: 1px solid #ddd;
-        }
+.sidebar {
+  width: 250px; /* Adjust sidebar width as needed */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+  margin-right: 20px; /* Space between sidebar and main content */
+}
 
-        header h1 {
-            margin-bottom: 0.5em;
-            color: #333;
-        }
+.sidebar h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
 
-        header p {
-            margin-bottom: 1em;
-            color: #555;
-        }
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
 
-        .intro-section {
-            text-align: center;
-            padding: 2em 0;
-        }
+.sidebar ul li {
+  margin-bottom: 10px;
+}
 
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1em;
-        }
+.sidebar ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
 
-        .highlighted-projects {
-            padding: 2em 0;
-            background-color: #f8f9fa;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-        }
+.sidebar p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
 
-        .highlighted-projects h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 1.5em;
-        }
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional: Style for the photo */
+  margin-bottom: 15px;
+}
 
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 0 20px;
-        }
+.sidebar .social-links a {
+  margin-right: 10px;
+  color: #555;
+  font-size: 1.2em; /* Adjust size of social icons */
+}
 
-        .project-card {
-            border: 1px solid #eee;
-            padding: 15px;
-            border-radius: 5px;
-        }
+.header-paragraph {
+  margin-bottom: 30px; /* Adjust the margin between the header paragraph and the main body */
+}
 
-        .project-card h4 a {
-            color: #007bff;
-            text-decoration: none;
-        }
+.main-body {
+  flex-grow: 1; /* Allow main body to take remaining width */
+}
 
-        .project-card p {
-            color: #555;
-        }
+.project-section {
+  margin-bottom: 40px; /* Example margin between project sections */
+  padding: 15px;
+  border: 1px solid #ddd;
+}
 
-        .link-section {
-            text-align: center;
-            padding: 1.5em 0;
-        }
+h2 {
+  color: #333;
+}
 
-        .link-section a {
-            margin: 0 10px;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
+h3 {
+  color: #555;
+  margin-top: 0;
+}
 
-        .about-me-section {
-            padding: 2em 20px;
-        }
+.overview {
+  margin-top: 10px;
+  color: #777;
+}
 
-        .about-me-section h2 {
-            color: #333;
-            margin-bottom: 1em;
-        }
-
-        .about-me-section h3 {
-            color: #555;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-        }
-
-        .about-me-section ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1em 0;
-            background-color: #333;
-            color: #fff;
-            position: sticky; /* Or fixed, depending on desired behavior */
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+.project-image {
+  max-width: 300px;
+  height: auto;
+  margin: 10px 0;
+}
+</style>
 </head>
 <body>
 
-    <header>
-        <h1>Data Science Portfolio</h1>
-        <p>
-            Welcome to my data science portfolio! This collection showcases a variety of projects demonstrating my skills in data analysis, machine learning, statistical modeling, and data engineering across different domains.
-            Repository containing portfolio of data science projects completed by me for academic, self learning, and hobby purposes. Presented in the form of Python files, Jupyter notebooks, and R markdown files.
-        </p>
-    </header>
+  <div class="sidebar">
+    <h2>Navigation</h2>
+    <ul>
+      <li><a href="#">Homepage (Landing Page)</a></li>
+      <li><a href="#about">About Me</a></li>
+    </ul>
 
-    <section class="intro-section">
-        <h2>Hi, I'm [Your Name]</h2>
-        <p>I am a passionate data scientist with a strong foundation in [mention 1-2 key areas like machine learning and statistical analysis] dedicated to extracting meaningful insights from complex data and building impactful solutions.</p>
-    </section>
+    <h2>About Me</h2>
+    <img src="your_photo.jpg" alt="Your Professional Photo" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;"> <p>Hi, I'm [Your Name], a passionate data scientist with expertise in [mention 1-2 key areas like machine learning, data analysis]. I'm dedicated to uncovering insights from data to drive informed decisions.</p>
 
-    <section class="highlighted-projects">
-        <h2>Highlighted Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h4><a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Alzheimer's%20disease">Alzheimer's Disease Analysis</a></h4>
-                <p>Investigated patterns and built predictive models for Alzheimer's disease using machine learning techniques.</p>
-            </div>
-            <div class="project-card">
-                <h4><a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Heat%20Disease%20Analysis">Heart Disease Analysis</a></h4>
-                <p>Identified key risk factors and developed models to predict the likelihood of heart disease.</p>
-            </div>
-            </div>
-    </section>
+    <h3>Top Projects</h3>
+    <ul>
+      <li><a href="#alzheimers">Alzheimer's Disease Analysis</a></li>
+      <li><a href="#heart">Heart Disease Analysis</a></li>
+      </ul>
 
-    <section class="link-section">
-        <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
-        <a href="path/to/your/resume.pdf" target="_blank">Resume (PDF)</a>
-        <a href="#about">About Me</a> </section>
+    <h3>Connect</h3>
+    <div class="social-links">
+      <a href="[Your LinkedIn Link]" target="_blank">LinkedIn</a> |
+      <a href="[Your GitHub Link]" target="_blank">GitHub</a> |
+      <a href="[Link to Your Resume PDF]" target="_blank">Resume</a>
+    </div>
 
-    <section id="about" class="about-me-section">
-        <h2>About Me</h2>
-        <p>A little more about my background and interests...</p>
+    <h3>Technical Skills</h3>
+    <p><strong>Languages:</strong> Python, R, SQL</p>
+    <p><strong>Tools & Technologies:</strong> Tableau, [Add other tools]</p>
+    <p><strong>Interests:</strong> NLP, Forecasting, Computer Vision</p>
+  </div>
 
-        <h3>Education and Certifications</h3>
-        <ul>
-            <li>[Your Degree], [Your Major], [University Name], [Year]</li>
-            <li>[Certification Name], [Issuing Organization], [Year] (if applicable)</li>
-            </ul>
+  <div class="main-body">
+    <div class="header-paragraph">
+      Welcome to my data science portfolio! This collection showcases a variety of projects demonstrating my skills in data analysis, machine learning, statistical modeling, and data engineering across different domains. Repository containing portfolios of data science projects completed by me for academic, self-learning, and hobby purposes. Presented in the form of Python files, Jupyter notebooks, and R markdown files.
+    </div>
 
-        <h3>Technical Skills</h3>
-        <ul>
-            <li><strong>Programming Languages:</strong> Python, R, SQL</li>
-            <li><strong>Data Analysis & Visualization:</strong> Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Tableau</li>
-            <li><strong>Machine Learning:</strong> [Mention specific algorithms or libraries]</li>
-            <li><strong>Databases:</strong> [Mention specific databases like PostgreSQL, MySQL]</li>
-            </ul>
+    <h2>Projects</h2>
 
-        <h3>Interests in Data Science</h3>
-        <p>My interests within data science include:</p>
-        <ul>
-            <li>Natural Language Processing (NLP)</li>
-            <li>Time Series Analysis and Forecasting</li>
-            <li>Computer Vision</li>
-            <li>[Add other areas of interest]</li>
-        </ul>
-    </section>
+    <div class="project-section" id="alzheimers">
+      <h3>Machine Learning and Neural Network:</h3>
+      <a href="#">Alzheimer's Disease Analysis</a>
+      <div class="overview">
+        Overview: This project investigates a dataset related to Alzheimer's disease. The goal is to explore potential patterns, identify key factors that might be associated with the disease, and potentially build predictive models for early detection or progression. The analysis involves data cleaning, exploratory data analysis (EDA), feature engineering, and the application of relevant statistical or machine learning techniques. Insights gained from this project could contribute to a better understanding of Alzheimer's disease.
+      </div>
+      <img src="placeholder_alzheimers.png" alt="Alzheimer's Disease" class="project-image">
+    </div>
 
-    <footer>
-        <p>© 2025 Abraham Abate. All rights reserved.</p>
-    </footer>
+    <div class="project-section" id="heart">
+      <h3></h3>
+      <a href="#">Heart Disease Analysis</a>
+      <div class="overview">
+        Overview: This project investigates a dataset related to heart disease. The goal is to identify key risk factors associated with heart disease and potentially build predictive models to estimate the likelihood of an individual developing the condition. The analysis involves data ...
+      </div>
+      </div>
+
+    </div>
 
 </body>
 </html>
