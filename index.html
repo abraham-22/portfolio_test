@@ -1,116 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Data Science Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <div class="sidebar">
     <h2>Navigation</h2>
     <ul>
-      <li><a href="#">Homepage (Landing Page)</a></li>
+      <li><a href="#home">Homepage</a></li>
       <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
     </ul>
 
-    <h2>About Me</h2>
-    <img src="your_photo.jpg" alt="Your Professional Photo" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;"> <p>Hi, I'm [Your Name], a passionate data scientist with expertise in [mention 1-2 key areas like machine learning, data analysis]. I'm dedicated to uncovering insights from data to drive informed decisions.</p>
+    <h2 id="about">About Me</h2>
+    <img src="your_photo.jpg" alt="Your Professional Photo"
+         style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
+    <p>Hi, I'm <strong>John Doe</strong>, a passionate data scientist with expertise in machine learning and data visualization. I'm dedicated to uncovering insights from data to drive informed decisions.</p>
 
     <h3>Connect</h3>
     <div class="social-links">
-      <a href="[Your LinkedIn Link]" target="_blank">LinkedIn</a> |
-      <a href="[Your GitHub Link]" target="_blank">GitHub</a> |
-      <a href="[Link to Your Resume PDF]" target="_blank">Resume</a>
+      <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/johndoe" target="_blank">GitHub</a> |
+      <a href="resume.pdf" target="_blank">Resume</a>
     </div>
 
     <h3>Technical Skills</h3>
     <p><strong>Languages:</strong> Python, R, SQL</p>
-    <p><strong>Tools & Technologies:</strong> Tableau, [Add other tools]</p>
+    <p><strong>Tools & Technologies:</strong> Tableau, Power BI, Scikit-learn, TensorFlow</p>
     <p><strong>Interests:</strong> NLP, Forecasting, Computer Vision</p>
   </div>
 
-  <div class="main-body">
+  <div class="main-body" id="home">
+    <h1>Data Science Portfolio</h1>
     <div class="header-paragraph">
-      Welcome to my data science portfolio! This collection showcases a variety of projects demonstrating my skills in data analysis, machine learning, statistical modeling, and data engineering across different domains. Repository containing portfolios of data science projects completed by me for academic, self-learning, and hobby purposes. Presented in the form of Python files, Jupyter notebooks, and R markdown files.
+      Welcome to my data science portfolio! This collection showcases a variety of projects demonstrating my skills in data analysis, machine learning, statistical modeling, and data engineering across different domains.
     </div>
-
-    <h2>Projects</h2>
-
-    <p># Data Science Portfolio_test</p>
-
-    <p>Welcome to my data science portfolio! This collection showcases a variety of projects demonstrating my skills in data analysis, machine learning, statistical modeling, and data engineering across different domains. Repository containing portfolio of data science projects completed by me for academic, self learning, and hobby purposes. Presented in the form of Python files, Jupyter notebooks, and R markdown files.</p>
 
     <hr>
 
+    <h2 id="projects">Projects</h2>
+
+    <!-- Machine Learning -->
     <h3>Machine Learning and Neural Network:</h3>
     <ul>
       <li id="alzheimers">
         <a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Alzheimer's%20disease"><strong>Alzheimer's Disease Analysis</strong></a>
-        <p><strong>Overview:</strong> This project investigates a dataset related to Alzheimer's disease. The goal is to explore potential patterns, identify key factors that might be associated with the disease, and potentially build predictive models for early detection or progression. The analysis involves data cleaning, exploratory data analysis (EDA), feature engineering, and the application of relevant statistical or machine learning techniques. Insights gained from this project could contribute to a better understanding of Alzheimer's disease.</p>
-        <img src="https://github.com/user-attachments/assets/87af2869-5f47-45d2-8259-a4adc20d982d" width="300" height="200"/>
+        <p><strong>Overview:</strong> Exploring patterns and building models related to Alzheimer's disease. Involves EDA, feature engineering, and ML techniques.</p>
+        <img src="https://example.com/alzheimers.jpg" width="300" height="200"/>
       </li>
+
       <li id="heart">
-        <a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Heat%20Disease%20Analysis"><strong>Heart Disease Analysis</strong></a>
-        <p><strong>Overview:</strong> This project investigates a dataset related to heart disease. The goal is to identify key risk factors associated with heart disease and potentially build predictive models to estimate the likelihood of an individual developing the condition. The analysis involves data cleaning, exploratory data analysis, feature selection, and the application of classification algorithms. The insights gained can contribute to preventative healthcare efforts.</p>
-        <img src="https://github.com/user-attachments/assets/bc24f7cd-2593-45d6-9da9-9810d4dc422d" width="300" height="200"/>
+        <a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Heart%20Disease%20Analysis"><strong>Heart Disease Analysis</strong></a>
+        <p><strong>Overview:</strong> Identifying key heart disease risk factors and building classification models to aid in early detection.</p>
+        <img src="https://example.com/heart.jpg" width="300" height="200"/>
       </li>
+
       <li id="clustering">
         <a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Clustering%20Analysis%20of%20vehicles"><strong>Clustering Analysis of Vehicles</strong></a>
-        <p><strong>Overview:</strong> This project applies unsupervised learning techniques, specifically clustering algorithms, to a dataset of vehicles. The objective is to identify natural groupings or segments within the vehicle data based on their features (e.g., engine size, fuel efficiency, horsepower, price). The project involves data preprocessing, feature scaling, applying different clustering algorithms (like K-Means or DBSCAN), evaluating the cluster quality, and interpreting the characteristics of the identified vehicle segments. This could be useful for market segmentation or understanding vehicle trends.</p>
-        <img src="https://github.com/user-attachments/assets/47c8e362-5f63-4eb9-a64c-7a458e0dce8c" width="300" height="200"/>
+        <p><strong>Overview:</strong> Segmenting vehicles using K-Means and DBSCAN for market analysis and trend detection.</p>
+        <img src="https://example.com/clustering.jpg" width="300" height="200"/>
       </li>
+
       <li id="crypto">
         <a href="https://github.com/abraham-22/data-science-portfolio/blob/main/Crypto%20Data%20Analysis/crypto_clustering.ipynb"><strong>Crypto Data Analysis</strong></a>
-        <p><strong>Overview:</strong> This project involves the analysis of cryptocurrency market data. The objective is to explore price trends, volatility, correlations between different cryptocurrencies, and potentially identify trading signals or patterns. The project utilizes Clustering modeling to gain insights into the dynamic cryptocurrency market.</p>
-        <img src="https://github.com/user-attachments/assets/fe17e30f-90c4-490f-a23d-c758e5d1b7c4" width="300" height="200"/>
+        <p><strong>Overview:</strong> Clustering and correlation analysis of cryptocurrencies to detect trends and patterns.</p>
+        <img src="https://example.com/crypto.jpg" width="300" height="200"/>
       </li>
+
       <li id="creditrisk">
         <a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Credit%20Risk%20Analysis"><strong>Credit Risk Analysis</strong></a>
-        <p><strong>Overview:</strong> This project focuses on building models to predict the credit risk of individuals or entities. Using historical credit data, the goal is to develop classification models that can distinguish between borrowers who are likely to repay their loans and those who are likely to default. The project involves data cleaning, feature engineering, handling imbalanced datasets, training and evaluating various classification algorithms (e.g.Random Forest, Gradient Boosting), and interpreting model performance metrics.</p>
-        <img src="https://github.com/user-attachments/assets/f26e3e66-6771-467e-86a2-f15f663883bf" width="400"/>
+        <p><strong>Overview:</strong> Building models to predict borrower credit risk using classification techniques.</p>
+        <img src="https://example.com/creditrisk.jpg" width="400"/>
       </li>
     </ul>
 
+    <!-- NLP -->
     <h3>Natural Language Processing</h3>
     <ul>
       <li id="amazonvine">
         <a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Amazon%20Vine%20Analysis"><strong>Amazon Vine Analysis</strong></a>
-        <p><strong>Overview:</strong> This project analyzes Amazon Vine program data. The Amazon Vine program invites trusted reviewers to post opinions about new and pre-release items. This analysis aims to understand the characteristics of Vine reviews compared to non-Vine reviews. Key objectives include determining if Vine reviews are more helpful, if they tend to have higher ratings, and identifying any potential biases. The project involves data manipulation, statistical testing, and potentially sentiment analysis.</p>
-        <img src="https://github.com/user-attachments/assets/e0b15124-ace1-4685-8f21-cf49bb0882a0" width="400"/>
+        <p><strong>Overview:</strong> Comparing Vine vs non-Vine reviews using statistical analysis and sentiment detection.</p>
+        <img src="https://example.com/amazonvine.jpg" width="400"/>
       </li>
     </ul>
 
+    <!-- Data Engineering -->
     <h3>Data Engineering and Database</h3>
     <ul>
       <li id="crowdfundingetl">
         <a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Crowdfunding%20ETL"><strong>Crowdfunding ETL</strong></a>
-        <p><strong>Overview:</strong> This project focuses on the Extract, Transform, Load (ETL) process for crowdfunding data. The goal is to design and implement a pipeline that can extract data from databases, transform it into a usable format, and load it into a data warehouse or analysis platform. This project demonstrates skills in data engineering, data wrangling, and database management. The resulting data can then be used for further analysis of crowdfunding trends and success factors.</p>
-        <img src="https://github.com/user-attachments/assets/92fe0865-e84c-4a62-8628-878f85f0fdf9" width="400"/>
+        <p><strong>Overview:</strong> Building an ETL pipeline for crowdfunding data to support downstream analysis.</p>
+        <img src="https://example.com/crowdfunding.jpg" width="400"/>
       </li>
     </ul>
 
+    <!-- Visualization -->
     <h3>Data Analysis and Visualisation</h3>
     <ul>
       <li id="childcare">
         <a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Childcare%20Data%20Analysis"><strong>Childcare Data Analysis</strong></a>
-        <p><strong>Overview:</strong> This project involves the analysis of childcare-related data. The specific focus could vary, but it might include exploring factors affecting the availability and affordability of childcare, analyzing the impact of childcare on child development, or investigating trends in childcare utilization. The analysis would involve data cleaning, visualization, statistical analysis childcare dataset. By leveraging multiple visualization techniques,Power BI dashboards, and infographics, the project aims to provide an accessible and data-driven perspective on childcare expenses.</p>
-        <img src="https://github.com/user-attachments/assets/3f27d128-4ca3-4261-883b-33b72bcb632f" width="400"/>
+        <p><strong>Overview:</strong> Exploring childcare affordability, availability, and trends with Power BI and statistical tools.</p>
+        <img src="https://example.com/childcare.jpg" width="400"/>
       </li>
+
       <li id="mecharcar">
         <a href="https://github.com/abraham-22/data-science-portfolio/tree/main/MechaCar_Statistical_Analysis"><strong>MechaCar Statistical Analysis</strong></a>
-        <p><strong>Overview:</strong> This project focuses on performing statistical analysis on data related to a fictional vehicle company, MechaCar. The specific objectives could include analyzing the performance of different suspension coils, investigating the relationship between vehicle weight and fuel efficiency, or evaluating the impact of various design parameters on vehicle performance. The project involves formulating hypotheses, conducting statistical tests (e.g., t-tests, ANOVA), and interpreting the results to provide data-driven recommendations.</p>
-        <img src="https://github.com/user-attachments/assets/c6e91fbf-aace-4605-9a35-d0325f941a67" width="400" height="200"/>
+        <p><strong>Overview:</strong> Statistical tests on vehicle design and performance data for a fictional company.</p>
+        <img src="https://example.com/mechacar.jpg" width="400" height="200"/>
       </li>
+
       <li id="smallprojects">
         <a href="https://github.com/abraham-22/data-science-portfolio/tree/main/Small%20projects"><strong>Small Projects</strong></a>
-        <p><strong>Overview:</strong> This section represents a collection of smaller, focused data science explorations and exercises. These projects might involve practicing specific techniques, working with smaller datasets, or exploring different data visualization methods. While individual descriptions might be shorter, this section demonstrates a continuous learning and experimentation mindset.</p>
+        <p><strong>Overview:</strong> Collection of experimental mini-projects demonstrating techniques and quick analyses.</p>
       </li>
+
       <li id="vacationspot">
         <strong>Vacation Spot</strong>
-        <p><strong>Overview:</strong> This project involves analyzing data to recommend or categorize vacation spots based on various criteria. This involve analyzing data related to location features (e.g., Weather, cost, activities, user ratings, crime statistics, and historical trends).</p>
+        <p><strong>Overview:</strong> Analyzing location data (weather, costs, ratings, etc.) to recommend travel destinations.</p>
       </li>
     </ul>
 
+    <p><a href="#home">Back to Top</a></p>
   </div>
 
 </body>
