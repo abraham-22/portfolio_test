@@ -14,9 +14,9 @@ body {
 
 /* Jumbotron (Hero Section) */
 .jumbotron {
-    background-image: url("../datascience image.png"); /* Adjust path if image is in a different location */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
+    background-image: url("images/datascience image.jpg"); 
+    background-size: cover;
+    background-position: center; 
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -48,6 +48,17 @@ body {
 
 .jumbotron .btn:hover {
     background-color: #008ba7;
+}
+
+.jumbotron {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
 }
 
 /* Sidebar */
