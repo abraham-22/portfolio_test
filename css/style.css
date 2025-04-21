@@ -1,3 +1,5 @@
+/* css/style.css */
+
 /* Updated CSS for a more professional look */
 body {
     font-family: 'Arial', sans-serif;
@@ -5,7 +7,7 @@ body {
     color: #333;
     line-height: 1.6;
     margin: 0;
-    padding: 0 0 0 400px; /* Added left padding to body to accommodate fixed sidebar */
+    padding: 0 0 0 350px; /* Added left padding to body to accommodate fixed sidebar */
     display: flex;
     min-height: 100vh;
     box-sizing: border-box;
@@ -15,7 +17,7 @@ body {
     background-color: #2c3e50;
     color: #fff;
     padding: 30px;
-    width: 400px;
+    width: 350px; /* Set sidebar width to 350px */
     position: fixed;
     height: 100%;
     overflow-y: auto;
@@ -98,7 +100,7 @@ body {
 .main-body {
     padding: 30px;
     margin-left: 0; /* Reset margin-left as body padding handles spacing */
-    width: calc(100% - 450px); /* Adjust width based on sidebar width */
+    width: calc(100% - 350px); /* Adjusted width to avoid overlap with 350px sidebar */
     background-color: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
 }
