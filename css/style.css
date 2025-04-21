@@ -98,7 +98,7 @@ body {
 .main-body {
     padding: 30px;
     margin-left: 0; /* Reset margin-left as body padding handles spacing */
-    width: calc(100% - 400px); /* Adjust width based on sidebar width */
+    width: calc(100% - 450px); /* Adjust width based on sidebar width */
     background-color: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
 }
