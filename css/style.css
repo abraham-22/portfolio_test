@@ -1,5 +1,3 @@
-/* css/style.css */
-
 /* Updated CSS for a more professional look */
 body {
     font-family: 'Arial', sans-serif;
@@ -99,7 +97,7 @@ body {
 
 .main-body {
     padding: 30px;
-    margin-left: 0; /* Reset margin-left as body padding handles spacing */
+    margin-left: 350px; /* Move main body to the right to avoid overlap with sidebar */
     width: calc(100% - 350px); /* Adjusted width to avoid overlap with 350px sidebar */
     background-color: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
