@@ -5,7 +5,7 @@ body {
     color: #333;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 400px; /* Added left padding to body to accommodate fixed sidebar */
     display: flex;
     min-height: 100vh;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
     background-color: #2c3e50;
     color: #fff;
     padding: 30px;
-    width: 400px; /* Increased sidebar width to 400px */
+    width: 400px;
     position: fixed;
     height: 100%;
     overflow-y: auto;
@@ -23,6 +23,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    left: 0; /* Ensure sidebar sticks to the left */
+    top: 0; /* Ensure sidebar sticks to the top */
 }
 
 .sidebar h2 {
@@ -95,8 +97,8 @@ body {
 
 .main-body {
     padding: 30px;
-    margin-left: 400px; /* Increased margin-left to match sidebar width */
-    width: calc(100% - 400px); /* Adjusted width to avoid overlap */
+    margin-left: 0; /* Reset margin-left as body padding handles spacing */
+    width: calc(100% - 400px); /* Adjust width based on sidebar width */
     background-color: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
 }
@@ -194,6 +196,7 @@ hr {
 @media (max-width: 768px) {
     body {
         flex-direction: column;
+        padding-left: 0; /* Remove body left padding on smaller screens */
     }
 
     .sidebar {
@@ -226,7 +229,7 @@ hr {
     }
 
     .main-body {
-        margin-left: 0;
+        margin-left: 0; /* Ensure main body starts at the left on smaller screens */
         width: 100%;
         padding: 20px;
         box-shadow: none;
