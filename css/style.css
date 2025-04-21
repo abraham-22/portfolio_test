@@ -5,7 +5,7 @@ body {
     color: #333;
     line-height: 1.6;
     margin: 0;
-    padding: 0 0 0 350px; /* Added left padding to body to accommodate fixed sidebar */
+    padding: 0 0 0 400px; /* Added left padding to body to accommodate fixed sidebar */
     display: flex;
     min-height: 100vh;
     box-sizing: border-box;
