@@ -8,6 +8,14 @@ body {
     color: #333;
 }
 
+/* Sidebar aside (if used) */
+aside {
+    width: 100%;
+    max-width: 1000px; /* Align with main content */
+    margin: 0 auto;    /* Center it */
+    padding: 1rem;
+}
+
 /* Header */
 header {
     background: #20232a;
@@ -22,6 +30,14 @@ header h1 {
     padding: 0 3rem;
     font-size: 2.2rem;
     font-weight: 600;
+}
+
+/* Paragraph content under header */
+p {
+    max-width: 1000px;   /* Match the width of main content */
+    margin: 0 auto;      /* Center align */
+    padding: 1rem 0;
+    text-align: center;
 }
 
 /* Main content area */
@@ -105,6 +121,10 @@ footer {
     }
 
     ul li {
+        padding: 1rem;
+    }
+
+    aside {
         padding: 1rem;
     }
 }
