@@ -6,15 +6,16 @@ body {
 }
 
 .sidebar {
-  width: 250px; /* Adjust sidebar width as needed */
+  width: 600px; /* Adjust sidebar width as needed */
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: darkblue; /* Changed to dark blue */
   border-right: 1px solid #ddd;
   margin-right: 20px; /* Space between sidebar and main content */
+  color: white; /* Changed font color to white */
 }
 
 .sidebar h2 {
-  color: #333;
+  color: white; /* Ensure heading is also white */
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -30,11 +31,11 @@ body {
 
 .sidebar ul li a {
   text-decoration: none;
-  color: #007bff;
+  color: white; /* Ensure link color is white */
 }
 
 .sidebar p {
-  color: #555;
+  color: white; /* Ensure paragraph color is white */
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -48,7 +49,7 @@ body {
 
 .sidebar .social-links a {
   margin-right: 10px;
-  color: #555;
+  color: white; /* Ensure social link color is white */
   font-size: 1.2em; /* Adjust size of social icons */
 }
 
