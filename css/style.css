@@ -206,7 +206,7 @@ hr {
 }
 .right-advertisement {
     background-color: #303030; 
-    width: 250px; /* Adjust width as needed */
+    width: 350px; /* Adjust width as needed */
     flex-shrink: 0; /* Prevent advertisement from shrinking */
     padding: 20px;
     color: #fff; /* Optional: Text color for the advertisement area */
