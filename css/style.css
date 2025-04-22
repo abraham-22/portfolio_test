@@ -108,11 +108,12 @@ body {
 }
 
 .main-body {
-    background-image: url('images/datascience-image.png');
-    background-size: cover;
+    background-image: url('images/datascience-image.png'); /* adjust path as needed */
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     padding: 20px;
+    min-height: 100vh;
 }
 
 .main-body h1 {
