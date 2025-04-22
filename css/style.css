@@ -107,6 +107,14 @@ body {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
 }
 
+.main-body {
+    background-image: url('images/datascience-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
 .main-body h1 {
     font-size: 2.8em;
     color: #2c3e50;
