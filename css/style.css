@@ -204,21 +204,13 @@ hr {
     background: #eee;
     margin: 30px 0;
 }
-.viz-section {
-    background-color: #303030;
-    background-image: url('images/background.png'); /* Ensure path is correct */
-    background-size: cover; /* Or 'contain' if you prefer */
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 350px;
-    flex-shrink: 0;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    min-height: 200px; /* Optional: adjust as needed */
+.viz-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* optional: adds a subtle shadow */
 }
-
 /* Responsive design */
 @media (max-width: 768px) {
     body {
