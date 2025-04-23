@@ -107,15 +107,6 @@ body {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
 }
 
-.main-body {
-    background-image: url('images/datascience-image.png'); /* adjust path as needed */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
-    padding: 20px;
-    min-height: 100vh;
-}
-
 .main-body h1 {
     font-size: 2.8em;
     color: #2c3e50;
@@ -211,6 +202,19 @@ hr {
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* optional: adds a subtle shadow */
 }
+
+.viz-section {
+    background-color: #303030;
+    width: 350px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 20px auto; 
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     body {
