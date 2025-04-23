@@ -215,6 +215,35 @@ hr {
     margin: 20px auto; 
 }
 
+.viz-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.viz-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.viz-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.viz-item span {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     body {
