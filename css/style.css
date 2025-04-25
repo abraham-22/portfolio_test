@@ -217,7 +217,7 @@ hr {
     /* make it scroll independently */
     position: sticky;     /* or fixed, depending on your layout */
     top: 20px;            /* adjust as needed */
-    max-height: 90vh;     /* height relative to the viewport */
+    max-height: 100vh;     /* height relative to the viewport */
     overflow-y: auto;     /* enable scrolling */
 }
 .viz-list {
