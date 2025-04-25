@@ -212,9 +212,14 @@ hr {
     flex-shrink: 0;
     box-sizing: border-box;
     border-radius: 8px;
-    margin: 20px auto; 
-}
+    margin: 20px auto;
 
+    /* make it scroll independently */
+    position: sticky;     /* or fixed, depending on your layout */
+    top: 20px;            /* adjust as needed */
+    max-height: 90vh;     /* height relative to the viewport */
+    overflow-y: auto;     /* enable scrolling */
+}
 .viz-list {
     list-style: none;
     display: flex;
