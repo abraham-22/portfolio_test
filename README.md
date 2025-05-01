@@ -23,7 +23,7 @@ Welcome to my data science portfolio! This collection showcases a variety of pro
 
 - [**Customer Segementation Analysis**](https://github.com/abraham-22/data-science-portfolio/tree/main/Customer%20Segmentation)
 
-  - **Overview:** This project involves customer segementation using clustering analysis of cryptocurrency market data. Applied K-Means, DBSCAN, and Hierarchical Clustering to segment customer base based on behavioral and demographic attributes.The project delivered actionable insights that helped define marketing personas and personalized campaigns.
+  - **Overview:** This project involves customer segementation using clustering analysis. In this project, I applied K-Means, DBSCAN, and Hierarchical Clustering to segment customer base based on behavioral and demographic attributes.The project delivered actionable insights that helped define marketing personas and personalized campaigns.
 
        <img src="https://github.com/user-attachments/assets/57688ffc-42e8-44cc-a18f-d43ebc22abaa" width="300" height="200"/>
        
