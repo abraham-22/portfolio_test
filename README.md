@@ -21,6 +21,12 @@ Welcome to my data science portfolio! This collection showcases a variety of pro
 
        <img src="https://github.com/user-attachments/assets/bc24f7cd-2593-45d6-9da9-9810d4dc422d" width="300" height="200"/>
 
+- [**Customer Segementation Analysis**](https://github.com/abraham-22/data-science-portfolio/tree/main/Customer%20Segmentation)
+
+  - **Overview:** This project involves customer segementation using clustering analysis of cryptocurrency market data. Applied K-Means, DBSCAN, and Hierarchical Clustering to segment customer base based on behavioral and demographic attributes.The project delivered actionable insights that helped define marketing personas and personalized campaigns.
+
+       <img src="https://github.com/user-attachments/assets/57688ffc-42e8-44cc-a18f-d43ebc22abaa" width="300" height="200"/>
+       
 - [**Clustering Analysis of Vehicles**](https://github.com/abraham-22/data-science-portfolio/tree/main/Clustering%20Analysis%20of%20vehicles)
 
   - **Overview:** This project applies unsupervised learning techniques, specifically clustering algorithms, to a dataset of vehicles. The objective is to identify natural groupings or segments within the vehicle data based on their features (e.g., engine size, fuel efficiency, horsepower, price). The project involves data preprocessing, feature scaling, applying different clustering algorithms (like K-Means or DBSCAN), evaluating the cluster quality, and interpreting the characteristics of the identified vehicle segments. This could be useful for market segmentation or understanding vehicle trends.
